@@ -11,9 +11,8 @@ exibir.grid(row=0, column=1, rowspan=20, padx=10, pady=10, sticky="nsew")
 bancoDeDados = []
 id = 0
 
-# ---------------- FUNÇÕES ---------------- #
 def atualizarLista():
-    exibir.delete(0, tk.END)  # limpa a Listbox
+    exibir.delete(0, tk.END)  
     for imovel in bancoDeDados:
         linha = f"ID: {imovel['id']} | Endereço: {imovel['endereco']} | Proprietário: {imovel['proprietario']} | Entrada: {imovel['entrada']} | Valor: {imovel['valor']} | Descrição: {imovel['descricao']}"
         exibir.insert(tk.END, linha)
@@ -54,12 +53,10 @@ def editar():
     indice = selecionado[0]
     imovel = bancoDeDados[indice]
 
-    # Janela de edição
     janela = tk.Toplevel(tela)
     janela.title("Editar Imóvel")
     janela.geometry("400x300")
 
-    # Campos preenchidos
     tk.Label(janela, text="Endereço:").pack()
     entryE = tk.Entry(janela, width=40)
     entryE.insert(0, imovel["endereco"])
@@ -106,7 +103,6 @@ def remover():
     bancoDeDados.pop(indice)
     atualizarLista()
 
-# ---------------- INTERFACE ---------------- #
 tk.Label(tela, text="Digite o endereço:").grid(row=0, column=0, padx=5, pady=5)
 entryEndereco = tk.Entry(tela)
 entryEndereco.grid(row=1, column=0, padx=5, pady=5)
