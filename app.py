@@ -1,21 +1,33 @@
 import tkinter as tk
 from tkinter import messagebox
+import datetime as dt
+import json
 
 tela = tk.Tk()
 tela.geometry("1200x500")
 tela.title("Administradora")
 
-exibir = tk.Listbox(tela, width=80, height=20)
+exibir = tk.Listbox(tela, width=100, height=20)
 exibir.grid(row=0, column=1, rowspan=20, padx=10, pady=10, sticky="nsew")
 
-bancoDeDados = []
+bd = []
 id = 0
+arquivo_bd = "Banco de dados.json"
+
+try:
+    with open(arquivo_bd, "r", encoding="utf-8") as arquivo:
+        bd = json.load(arquivo)
+except:
+    with open(arquivo_bd, "w", encoding="utf-8") as arquivo:
+        json.dump(bd, arquivo, indent=4)
 
 def atualizarLista():
     exibir.delete(0, tk.END)  
-    for imovel in bancoDeDados:
+    for imovel in bd:
         linha = f"ID: {imovel['id']} | Endereço: {imovel['endereco']} | Proprietário: {imovel['proprietario']} | Entrada: {imovel['entrada']} | Valor: {imovel['valor']} | Descrição: {imovel['descricao']}"
-        exibir.insert(tk.END, linha)
+        exibir.insert(tk.END, linha)   
+    with open(arquivo_bd, "w", encoding="utf-8") as arquivo:
+        json.dump(bd, arquivo, indent=4)
 
 def enviarImovel():
     global id
@@ -27,7 +39,7 @@ def enviarImovel():
     valor = entryValor.get().strip()
     descricao = entryDescricao.get().strip()
 
-    bancoDeDados.append({
+    bd.append({
         "id": id,
         "endereco": endereco,
         "proprietario": proprietario,
@@ -51,7 +63,7 @@ def editar():
         return
 
     indice = selecionado[0]
-    imovel = bancoDeDados[indice]
+    imovel = bd[indice]
 
     janela = tk.Toplevel(tela)
     janela.title("Editar Imóvel")
@@ -100,7 +112,7 @@ def remover():
         return
 
     indice = selecionado[0]
-    bancoDeDados.pop(indice)
+    bd.pop(indice)
     atualizarLista()
 
 tk.Label(tela, text="Digite o endereço:").grid(row=0, column=0, padx=5, pady=5)
@@ -127,4 +139,13 @@ tk.Button(tela, text="Enviar", command=enviarImovel).grid(row=15, column=0, padx
 tk.Button(tela, text="Editar", command=editar).grid(row=16, column=0, padx=5, pady=5)
 tk.Button(tela, text="Remover", command=remover).grid(row=17, column=0, padx=5, pady=5)
 
+def atualizarId():
+    y = 0
+    for x in bd:
+        y += 1
+    return y
+
+id = atualizarId()
+
+atualizarLista()
 tela.mainloop()
