@@ -1,18 +1,394 @@
 [
     {
-        "endereco": "Vila isabel Rio de Janeiro",
-        "proprietario": "Matheus Viana",
-        "entrada": "2025-09-03",
-        "valor": "1000",
-        "descricao": "",
-        "id": 1
+        "id": 1,
+        "endereco": "Avenida Atl\u00e2ntica, Copacabana Rio de Janeiro",
+        "proprietario": "Ana Lima",
+        "entrada": "2023-05-15",
+        "valor": "3200",
+        "descricao": "Apartamento de 2 quartos, 1 banheiro, sala e cozinha americana. Vista lateral para o mar."
     },
     {
-        "endereco": "Recreio dos Bandeirantes Rio de Janeiro",
+        "id": 2,
+        "endereco": "Rua Dias Ferreira, Leblon Rio de Janeiro",
+        "proprietario": "Carlos Souza",
+        "entrada": "2021-11-20",
+        "valor": "4500",
+        "descricao": "Amplo 3 quartos com su\u00edte, varanda gourmet, 2 banheiros e 1 vaga na garagem. Pr\u00e9dio com piscina."
+    },
+    {
+        "id": 3,
+        "endereco": "Rua do Ouvidor, Centro Rio de Janeiro",
+        "proprietario": "Juliana Santos",
+        "entrada": "2024-02-10",
+        "valor": "2100",
+        "descricao": "Quitnete reformada com 1 banheiro, ideal para solteiros ou casal sem filhos. Localiza\u00e7\u00e3o central."
+    },
+    {
+        "id": 4,
+        "endereco": "Praia de Botafogo, Botafogo Rio de Janeiro",
+        "proprietario": "Eduardo Oliveira",
+        "entrada": "2022-08-05",
+        "valor": "2800",
+        "descricao": "Apartamento moderno de 1 quarto, com sala e cozinha integradas. Vista para a Enseada de Botafogo."
+    },
+    {
+        "id": 5,
+        "endereco": "Rua Visconde de Piraj\u00e1, Ipanema Rio de Janeiro",
+        "proprietario": "Helena Costa",
+        "entrada": "2020-09-30",
+        "valor": "5000",
+        "descricao": "Cobertura duplex de alto padr\u00e3o, 4 quartos (2 su\u00edtes), 3 banheiros e terra\u00e7o com piscina privativa."
+    },
+    {
+        "id": 6,
+        "endereco": "Rua Sete de Setembro, Centro Rio de Janeiro",
+        "proprietario": "Bruno Rodrigues",
+        "entrada": "2023-01-25",
+        "valor": "1800",
+        "descricao": "Sala comercial ampla com 1 banheiro, perfeita para escrit\u00f3rio ou consult\u00f3rio."
+    },
+    {
+        "id": 7,
+        "endereco": "Avenida Nossa Senhora de Copacabana, Copacabana Rio de Janeiro",
+        "proprietario": "Fernanda Almeida",
+        "entrada": "2021-04-12",
+        "valor": "3500",
+        "descricao": "Apartamento de 2 quartos, 2 banheiros e cozinha espa\u00e7osa. Perto da praia."
+    },
+    {
+        "id": 8,
+        "endereco": "Rua Santa Clara, Copacabana Rio de Janeiro",
+        "proprietario": "Gustavo Silva",
+        "entrada": "2024-07-08",
+        "valor": "2700",
+        "descricao": "Apartamento 1 quarto, com sala ampla e \u00e1rea de servi\u00e7o separada."
+    },
+    {
+        "id": 9,
+        "endereco": "Rua do Catete, Catete Rio de Janeiro",
+        "proprietario": "Igor Pereira",
+        "entrada": "2022-06-19",
+        "valor": "2300",
+        "descricao": "Apartamento de 2 quartos, 1 banheiro e sala bem iluminada. Pr\u00f3ximo ao metr\u00f4."
+    },
+    {
+        "id": 10,
+        "endereco": "Rua do Ouvidor, Lapa Rio de Janeiro",
+        "proprietario": "Diana Santos",
+        "entrada": "2020-11-02",
+        "valor": "1500",
+        "descricao": "Kitnet reformada, com cozinha americana. Edif\u00edcio com portaria 24h."
+    },
+    {
+        "id": 11,
+        "endereco": "Rua Dias Ferreira, G\u00e1vea Rio de Janeiro",
+        "proprietario": "Matheus Viana",
+        "entrada": "2025-09-03",
+        "valor": "3000",
+        "descricao": "Apartamento de 2 quartos (1 su\u00edte), 2 banheiros, com varanda e vista para a G\u00e1vea."
+    },
+    {
+        "id": 12,
+        "endereco": "Avenida Atl\u00e2ntica, Copacabana Rio de Janeiro",
         "proprietario": "Yago Silva",
         "entrada": "2022-03-08",
         "valor": "2500",
-        "descricao": "",
-        "id": 2
+        "descricao": "Studio elegante com 1 banheiro. Mobiliado. Pr\u00e9dio com lavanderia compartilhada."
+    },
+    {
+        "id": 13,
+        "endereco": "Rua do Catete, Flamengo Rio de Janeiro",
+        "proprietario": "Laura Souza",
+        "entrada": "2023-08-18",
+        "valor": "2900",
+        "descricao": "Apartamento de 3 quartos, 1 banheiro e depend\u00eancia de empregada. Pr\u00e9dio tradicional."
+    },
+    {
+        "id": 14,
+        "endereco": "Rua Sete de Setembro, Lapa Rio de Janeiro",
+        "proprietario": "Felipe Costa",
+        "entrada": "2021-01-22",
+        "valor": "1950",
+        "descricao": "Apartamento de 1 quarto, com sala e cozinha compactas. Perto de bares e restaurantes."
+    },
+    {
+        "id": 15,
+        "endereco": "Praia de Botafogo, Botafogo Rio de Janeiro",
+        "proprietario": "Sofia Rodrigues",
+        "entrada": "2024-04-01",
+        "valor": "3100",
+        "descricao": "Apartamento 2 quartos, 2 banheiros. Pr\u00e9dio com seguran\u00e7a 24h e sal\u00e3o de festas."
+    },
+    {
+        "id": 16,
+        "endereco": "Avenida Rio Branco, Centro Rio de Janeiro",
+        "proprietario": "Thiago Almeida",
+        "entrada": "2020-10-10",
+        "valor": "1650",
+        "descricao": "Sala comercial em edif\u00edcio de alto padr\u00e3o. Perfeita para escrit\u00f3rio."
+    },
+    {
+        "id": 17,
+        "endereco": "Rua da Lapa, Lapa Rio de Janeiro",
+        "proprietario": "Mariana Nascimento",
+        "entrada": "2023-06-28",
+        "valor": "2400",
+        "descricao": "Apartamento de 1 quarto, com sala espa\u00e7osa. Pr\u00f3ximo aos Arcos da Lapa."
+    },
+    {
+        "id": 18,
+        "endereco": "Rua Primeiro de Mar\u00e7o, Centro Rio de Janeiro",
+        "proprietario": "Rafael Santos",
+        "entrada": "2022-09-14",
+        "valor": "2600",
+        "descricao": "Apartamento de 2 quartos, 1 banheiro e cozinha com arm\u00e1rios planejados. Pr\u00e9dio com elevador."
+    },
+    {
+        "id": 19,
+        "endereco": "Rua Santa Clara, Ipanema Rio de Janeiro",
+        "proprietario": "Camila Oliveira",
+        "entrada": "2024-01-05",
+        "valor": "3900",
+        "descricao": "Apartamento de 2 quartos, 2 banheiros e \u00e1rea de servi\u00e7o. A poucos metros da praia."
+    },
+    {
+        "id": 20,
+        "endereco": "Rua Volunt\u00e1rios da P\u00e1tria, Botafogo Rio de Janeiro",
+        "proprietario": "Pedro Lima",
+        "entrada": "2020-03-17",
+        "valor": "3050",
+        "descricao": "Apartamento de 3 quartos, 2 banheiros, sala e cozinha com espa\u00e7o para copa."
+    },
+    {
+        "id": 22,
+        "endereco": "Avenida Brasil, Tijuca Rio de Janeiro",
+        "proprietario": "Alexandre Pereira",
+        "entrada": "2023-02-28",
+        "valor": "1700",
+        "descricao": "Apartamento 2 quartos, 1 banheiro, sala e cozinha com \u00e1rea de servi\u00e7o."
+    },
+    {
+        "id": 23,
+        "endereco": "Rua Primeiro de Mar\u00e7o, Lapa Rio de Janeiro",
+        "proprietario": "Beatriz Rodrigues",
+        "entrada": "2024-09-10",
+        "valor": "2050",
+        "descricao": "Kitnet com 1 banheiro, reformada, ideal para escrit\u00f3rio. Perto do metr\u00f4."
+    },
+    {
+        "id": 24,
+        "endereco": "Avenida Nossa Senhora de Copacabana, Copacabana Rio de Janeiro",
+        "proprietario": "Vinicius Lima",
+        "entrada": "2022-05-03",
+        "valor": "3400",
+        "descricao": "Apartamento 2 quartos, 2 banheiros, com vista lateral para a praia. Condom\u00ednio com infraestrutura."
+    },
+    {
+        "id": 25,
+        "endereco": "Rua Santa Clara, Leblon Rio de Janeiro",
+        "proprietario": "Larissa Costa",
+        "entrada": "2020-08-25",
+        "valor": "4100",
+        "descricao": "Apartamento de 3 quartos, 2 banheiros, com su\u00edte. Pr\u00e9dio com sal\u00e3o de festas."
+    },
+    {
+        "id": 26,
+        "endereco": "Rua do Ouvidor, Centro Rio de Janeiro",
+        "proprietario": "Jo\u00e3o Silva",
+        "entrada": "2023-03-14",
+        "valor": "1900",
+        "descricao": "Sala comercial ampla em andar alto com 1 banheiro. \u00d3tima ilumina\u00e7\u00e3o natural."
+    },
+    {
+        "id": 27,
+        "endereco": "Praia de Botafogo, Flamengo Rio de Janeiro",
+        "proprietario": "Luisa Santos",
+        "entrada": "2021-12-09",
+        "valor": "2850",
+        "descricao": "Apartamento de 2 quartos, 1 banheiro e sala grande. Vista para o P\u00e3o de A\u00e7\u00facar."
+    },
+    {
+        "id": 28,
+        "endereco": "Rua Sete de Setembro, G\u00e1vea Rio de Janeiro",
+        "proprietario": "Gustavo Oliveira",
+        "entrada": "2024-06-20",
+        "valor": "3700",
+        "descricao": "Apartamento de 3 quartos (1 su\u00edte), 2 banheiros, com varanda e 1 vaga de garagem."
+    },
+    {
+        "id": 29,
+        "endereco": "Avenida Atl\u00e2ntica, Ipanema Rio de Janeiro",
+        "proprietario": "Isabela Souza",
+        "entrada": "2022-01-07",
+        "valor": "4800",
+        "descricao": "Apartamento de 3 quartos (2 su\u00edtes), 3 banheiros e cozinha com ilha. De frente para o mar."
+    },
+    {
+        "id": 30,
+        "endereco": "Rua Dias Ferreira, Leblon Rio de Janeiro",
+        "proprietario": "Daniel Pereira",
+        "entrada": "2020-04-18",
+        "valor": "4600",
+        "descricao": "Cobertura de 2 quartos, 2 banheiros e terra\u00e7o. Pr\u00e9dio com piscina e academia."
+    },
+    {
+        "id": 31,
+        "endereco": "Rua do Catete, Catete Rio de Janeiro",
+        "proprietario": "Patricia Lima",
+        "entrada": "2023-10-05",
+        "valor": "2350",
+        "descricao": "Apartamento de 2 quartos, 1 banheiro, sala ampla e cozinha separada."
+    },
+    {
+        "id": 32,
+        "endereco": "Rua Volunt\u00e1rios da P\u00e1tria, Botafogo Rio de Janeiro",
+        "proprietario": "Arthur Costa",
+        "entrada": "2021-05-22",
+        "valor": "3150",
+        "descricao": "Apartamento 3 quartos, 2 banheiros e depend\u00eancia de empregada."
+    },
+    {
+        "id": 33,
+        "endereco": "Avenida Rio Branco, Centro Rio de Janeiro",
+        "proprietario": "Fernanda Rodrigues",
+        "entrada": "2024-03-29",
+        "valor": "2000",
+        "descricao": "Sala comercial com 1 banheiro, ar-condicionado central. Vista para o centro."
+    },
+    {
+        "id": 34,
+        "endereco": "Avenida Nossa Senhora de Copacabana, Copacabana Rio de Janeiro",
+        "proprietario": "Diego Almeida",
+        "entrada": "2022-02-15",
+        "valor": "3300",
+        "descricao": "Apartamento 2 quartos, 1 banheiro, sala e cozinha com \u00e1rea de servi\u00e7o."
+    },
+    {
+        "id": 35,
+        "endereco": "Rua Sete de Setembro, Lapa Rio de Janeiro",
+        "proprietario": "Renata Nascimento",
+        "entrada": "2020-11-28",
+        "valor": "1850",
+        "descricao": "Quitnet reformada, com arm\u00e1rios planejados na cozinha e no quarto."
+    },
+    {
+        "id": 36,
+        "endereco": "Rua da Lapa, Centro Rio de Janeiro",
+        "proprietario": "M\u00e1rcio Silva",
+        "entrada": "2023-07-07",
+        "valor": "2550",
+        "descricao": "Apartamento 1 quarto, sala, cozinha e 1 banheiro. Pr\u00e9dio com elevador e portaria 24h."
+    },
+    {
+        "id": 37,
+        "endereco": "Rua Dias Ferreira, Ipanema Rio de Janeiro",
+        "proprietario": "Cristina Santos",
+        "entrada": "2021-08-16",
+        "valor": "4200",
+        "descricao": "Apartamento 3 quartos (1 su\u00edte), 2 banheiros e varanda. Condom\u00ednio com infra completa."
+    },
+    {
+        "id": 38,
+        "endereco": "Praia de Botafogo, Botafogo Rio de Janeiro",
+        "proprietario": "Lucas Oliveira",
+        "entrada": "2024-05-09",
+        "valor": "2950",
+        "descricao": "Apartamento de 2 quartos, 1 banheiro. Bem localizado, perto de com\u00e9rcio e transporte."
+    },
+    {
+        "id": 39,
+        "endereco": "Rua do Ouvidor, Tijuca Rio de Janeiro",
+        "proprietario": "Sofia Souza",
+        "entrada": "2022-10-21",
+        "valor": "1550",
+        "descricao": "Apartamento de 1 quarto, com sala e cozinha pequenas. Perto do metr\u00f4."
+    },
+    {
+        "id": 40,
+        "endereco": "Rua Primeiro de Mar\u00e7o, Santa Teresa Rio de Janeiro",
+        "proprietario": "Paulo Pereira",
+        "entrada": "2020-02-04",
+        "valor": "2750",
+        "descricao": "Casa em vila, com 2 quartos, 2 banheiros e \u00e1rea externa privativa."
+    },
+    {
+        "id": 41,
+        "endereco": "Avenida Atl\u00e2ntica, Copacabana Rio de Janeiro",
+        "proprietario": "Julia Lima",
+        "entrada": "2023-11-13",
+        "valor": "3600",
+        "descricao": "Apartamento de 2 quartos, 2 banheiros, com vista lateral para a praia. Condom\u00ednio com playground."
+    },
+    {
+        "id": 42,
+        "endereco": "Rua do Catete, Flamengo Rio de Janeiro",
+        "proprietario": "Eduardo Costa",
+        "entrada": "2021-06-02",
+        "valor": "2150",
+        "descricao": "Apartamento 2 quartos, 1 banheiro, sala e cozinha com depend\u00eancia de empregada."
+    },
+    {
+        "id": 43,
+        "endereco": "Rua Santa Clara, G\u00e1vea Rio de Janeiro",
+        "proprietario": "Carolina Rodrigues",
+        "entrada": "2024-08-01",
+        "valor": "3850",
+        "descricao": "Apartamento 3 quartos, 2 banheiros (1 su\u00edte), com varanda. Pr\u00e9dio com elevador e portaria 24h."
+    },
+    {
+        "id": 44,
+        "endereco": "Rua Volunt\u00e1rios da P\u00e1tria, Botafogo Rio de Janeiro",
+        "proprietario": "Gabriel Almeida",
+        "entrada": "2022-04-20",
+        "valor": "3250",
+        "descricao": "Apartamento de 2 quartos, 2 banheiros e \u00e1rea de servi\u00e7o. Condom\u00ednio com seguran\u00e7a e \u00e1rea de lazer."
+    },
+    {
+        "id": 45,
+        "endereco": "Rua Sete de Setembro, Centro Rio de Janeiro",
+        "proprietario": "Mariana Nascimento",
+        "entrada": "2020-05-10",
+        "valor": "1750",
+        "descricao": "Sala comercial ampla em andar alto. Vista para o Centro da cidade."
+    },
+    {
+        "id": 46,
+        "endereco": "Avenida Brasil, Tijuca Rio de Janeiro",
+        "proprietario": "Ricardo Silva",
+        "entrada": "2023-09-24",
+        "valor": "1950",
+        "descricao": "Apartamento 2 quartos, 1 banheiro, sala e cozinha. Pr\u00f3ximo a vias de acesso."
+    },
+    {
+        "id": 47,
+        "endereco": "Rua Dias Ferreira, Leblon Rio de Janeiro",
+        "proprietario": "Beatriz Santos",
+        "entrada": "2021-03-08",
+        "valor": "4400",
+        "descricao": "Apartamento 3 quartos (1 su\u00edte), 2 banheiros, com varanda gourmet. Pr\u00e9dio com piscina e academia."
+    },
+    {
+        "id": 48,
+        "endereco": "Rua do Ouvidor, Lapa Rio de Janeiro",
+        "proprietario": "Felipe Oliveira",
+        "entrada": "2024-07-16",
+        "valor": "2650",
+        "descricao": "Apartamento de 1 quarto, com sala e cozinha integradas. Perto de bares e restaurantes."
+    },
+    {
+        "id": 49,
+        "endereco": "Rua Primeiro de Mar\u00e7o, Centro Rio de Janeiro",
+        "proprietario": "Laura Souza",
+        "entrada": "2022-06-25",
+        "valor": "2500",
+        "descricao": "Apartamento de 2 quartos, 1 banheiro, sala e cozinha. Pr\u00e9dio com elevador e portaria."
+    },
+    {
+        "id": 50,
+        "endereco": "Rua da Lapa, Lapa Rio de Janeiro",
+        "proprietario": "Andr\u00e9 Pereira",
+        "entrada": "2020-01-20",
+        "valor": "1800",
+        "descricao": "Quitnet reformada, com 1 banheiro. Ideal para solteiros."
     }
 ]
